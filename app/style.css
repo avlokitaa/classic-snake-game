@@ -1,0 +1,57 @@
+body {
+    /* Use flexbox to center content vertically and horizontally */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    background-color: #000; /* Set background color to black */
+    margin: 0; /* Remove default body margin */
+    font-family: 'Press Start 2P', cursive; /* Set a retro-style font */
+    color: #00ff00; /* Set default text color to green */
+}
+
+#game-container {
+    text-align: center; /* Center text content within the container */
+    background-color: #333; /* Dark gray background for the game container */
+    border: 5px solid #00ff00; /* Green border around the container */
+    padding: 10px; /* Add some padding inside the container */
+    /* Add a glowing green box shadow */
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+canvas {
+    display: block; /* Ensure the canvas behaves as a block element */
+    margin: 20px auto; /* Center the canvas horizontally with top/bottom margin */
+    background-color: #111; /* Darker background for the canvas itself */
+    border: 3px solid #00ff00; /* Green border around the canvas */
+}
+
+#score {
+    font-size: 1.5em; /* Increase font size for the score display */
+    margin-bottom: 10px; /* Add space below the score */
+}
+
+#game-over-message {
+    display: none; /* Hide the game over message by default */
+    font-size: 2em; /* Larger font size for the message */
+    color: #ff0000; /* Red text color for the message */
+    margin-top: 20px; /* Add space above the message */
+}
+
+#restart-button {
+    margin-top: 15px; /* Add space above the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #00ff00; /* Green background for the button */
+    color: #000; /* Black text color for the button */
+    border: 2px solid #00ff00; /* Green border for the button */
+    font-family: 'Press Start 2P', cursive; /* Apply the retro font */
+    font-size: 1em; /* Set font size */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+    /* Add a smooth transition effect for background and color changes on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #000; /* Change background to black on hover */
+    color: #00ff00; /* Change text color to green on hover */
+}
